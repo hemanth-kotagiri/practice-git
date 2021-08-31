@@ -11,6 +11,14 @@ Here's Everything that you're going to learn in this tutorial:
 
 That was a mouthful, follow the steps below to practice!
 
+But first, what in the world is Git?
+
+- It is a version control software that is used to track changes as you make modifications to your file(s).
+
+Yes, it's as simple as that. You can go back in history all the way to your first `commit` and see the changes you've made to your files.
+
+> This is as close as you can get to a time machine - but only for your files and folders.
+
 ### Forking and Cloning a remote repository
 
 Before you start working with GitHub, you need to have an account. [Sign up](https://github.com/join) for GitHub and come back here.
@@ -105,6 +113,26 @@ git branch -a
 git checkout feat-0
 ```
 
-- You will now be prompted that you have succesfully changed your branch to `feat-0`.
+- You will now be prompted that you have successfully changed your branch to `feat-0`.
 
 ### Understanding project development and contribution work flows
+
+Q. Why did we create a new branch, why not just work on the master branch?
+
+- It is always a good practice to modularize the features/implementations that you are working on so that they can be addressed individually by peers who are working with you on the same project.
+
+You as a contributor to any Open Source project are required to follow a set of
+contribution guidelines. And creating a branch, and raising PRs using it is
+absolutely essential - Which we are covering here.
+Usually, for any project, these are the steps taken to add new features/code into a repository.
+
+- Developers will maintain a fork of the upstream repository in their account.
+- They then create a new branch with meaningful name.
+- Make the changes locally by adding new code/implementations.
+- Then, they commit their changes with a meaningful message and push it to their remote origin.
+- After that, the developer will go about creating a new Pull Request to the upstream repository.
+- Maintainers from the upstream repository will be notified and the changes will be reviewed and accepted/rejected.
+
+You don't have to worry about the last step!
+
+### Learning to use basic git commands such as: `commit`, `add`, `push`
