@@ -41,3 +41,33 @@ git clone https://github.com/hemanth-kotagiri/practice-git.git
 - The repository is now cloned in your [current working directory](https://www.computerhope.com/jargon/c/currentd.htm).
 
 With this, you now have a local copy of the repository.
+
+#### Adding the upstream repository to your local development environment
+
+It is essential to add the upstream(a fancy way to refer to the original repository that you have cloned) to your local copy.
+To do this, follow these steps:
+
+- Make sure that you are in the directory of the cloned repository.
+- Type the following command:
+
+```sh
+git remote add upstream https://github.com/hemanth-kotagiri/practice-git.git
+```
+
+- Now, the upstream repository will be added to your local development environment.
+- To check the available remote(s) you have, type the following:
+
+```sh
+git remote -v
+```
+
+- You will get the following as the output:
+
+```
+origin	https://github.com/{YOUR-GITHUB-ID}/practice-git.git (fetch)
+origin	https://github.com/{YOUR-GITHUB-ID}/practice-git.git (push)
+upstream	https://github.com/hemanth-kotagiri/practice-git.git (fetch)
+upstream	https://github.com/hemanth-kotagiri/practice-git.git (push)
+```
+
+You are now ready to go for the next step, that is to creating a new branch.
