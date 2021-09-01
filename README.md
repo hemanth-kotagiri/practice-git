@@ -40,16 +40,18 @@ git --version
 ```
 
 If you did everything correctly, you will be prompted with the version of Git
-your are running. If not, click the link mentioned above and install it correctly.
+your are running. If not, click the link mentioned above and install it correctly or raise an issue for the same.
 
-After you are done with Installing Git, you need to clone this repository.
+After you are done with Installing Git, you need to fork and clone this repository.
 For that, follow these steps:
 
+- Click on the `fork` button you see in the top right corner of this repository.
+- This will create a copy of the repository in your account.
 - Click on the green Code button you see and you will get a drop down and copy the specified link.
 - Now, open up your command prompt/terminal and execute the following:
 
 ```sh
-git clone https://github.com/hemanth-kotagiri/practice-git.git
+git clone https://github.com/{YOUR_GITHUB_HANDLE}/practice-git.git
 ```
 
 - The repository is now cloned in your [current working directory](https://www.computerhope.com/jargon/c/currentd.htm).
