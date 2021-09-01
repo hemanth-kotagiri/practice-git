@@ -200,13 +200,19 @@ git add poem.txt
 ```
 
 Now, if you type this: `git status`, you will see that the files are ready to
-be committed.
+be committed. Type the following:
 
-Type the following to finally push your changes to your remote
+```sh
+git commit -m "{MESSAGE}"
+```
+
+Use the above command to commit the changes with a message which vaguely describes your changes.
+
+Now, type the following to finally push your changes to your remote
 branch
 
 ```sh
-git push -u origin {BRANCH_NAME}
+git push -u origin feat-0
 ```
 
 With this, you have now pushed your new file successfully. To see the changes, head over to your repository in GitHub

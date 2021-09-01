@@ -1,4 +1,4 @@
-### Scott Aaronson, Reason to Believe.
+### Scott Aaronson, Reasons to Believe.
 
 His view on the P vs. NP problem
 
