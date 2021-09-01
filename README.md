@@ -6,7 +6,7 @@ Here's Everything that you're going to learn in this tutorial:
 - Adding the upstream repository to your local development environment.
 - Creating and working with branches.
 - Understanding project development and contribution work flows.
-- Learning to use basic git commands such as: commit, add, push.
+- Learning to use basic git commands such as: commit, add, push & pull.
 - Pushing the changes to your fork and creating a PR to the upstream repository.
 
 That was a mouthful, follow the steps below to practice!
@@ -135,4 +135,81 @@ Usually, for any project, these are the steps taken to add new features/code int
 
 You don't have to worry about the last step!
 
-### Learning to use basic git commands such as: `commit`, `add`, `push`
+### Learning to use basic git commands such as: `commit`, `add`, `push` & `pull`
+
+These are the four basic commands that you need to be familiar with.
+Let us learn these four commands in the fun way. Follow these steps:
+
+Remember we have added an upstream repository? Now, it's time to synchronize that repository with your local copy using the `pull` command.
+
+#### Pull
+
+- Type the following in your command prompt/terminal and make sure you're in the repository directory
+
+```sh
+git pull upstream master
+```
+
+Q. What does the above command do?
+
+A. It will `pull` the changes/code/implementations of the `upstream`(which is the original repository that you have forked) `master` branch into your local copy.
+
+- Now copy your repository URL and type the following command:
+
+```sh
+git remote add origin {YOUR-REPOSITORY-URL}
+```
+
+The above will create origin, if at all it doesn't exist.
+In this way, you will pull changes from remote repository, either from the upstream or from your origin.
+In the case of origin, you would type: `git pull origin master`
+
+#### Add & Commit
+
+You now have all the changes in the upstream repository synchronized with your local copy of the same.
+Now, you can simply create a file in the repository and track it's changes.
+Follow these:
+
+- Create a new folder in the directory with your name.
+- Change directory into that folder that you have just created.
+- Now, it's your turn to track any file that you wish to. Be it a file consisting of a poem, story, quote, or more technically - Code.
+- Create a new file and write anything within it and make sure, it's saved in the folder that you have created.
+- You are now ready for your first commit.
+
+#### Understanding the Staging area
+
+When you type the following in the command prompt/terminal:
+
+```sh
+git status
+```
+
+You will be prompted that you have untracked file(s). This is where you move it to the staging area, that is - They are ready to be committed.
+
+Use the `add` command to add particular file(s) to track by the following command:
+If you have named the new file as `poem.txt`:
+
+```sh
+git add poem.txt
+```
+
+Now, if you type this: `git status`, you will see that the files are ready to
+be committed.
+
+Type the following to finally push your changes to your remote
+branch
+
+```sh
+git push -u origin {BRANCH_NAME}
+```
+
+With this, you have now pushed your new file successfully. To see the changes, head over to your repository in GitHub
+and you will see that there's a new branch with new files.
+
+### Creating a Pull Request
+
+To create a pull request, click on the "Create Pull Request" button that you are prompted when you visit your repository in GitHub.
+You will now have the ability to add a Title and Description that you can write in Markdown, or plain text also works.
+After you are done explaining the changes, click on the Create Button and you are done!
+
+Now, the maintainers of the repository will be notified regarding your PR and they would review it!
