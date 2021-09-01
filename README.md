@@ -182,7 +182,7 @@ Follow these:
 - Create a new file and write anything within it and make sure, it's saved in the folder that you have created.
 - You are now ready for your first commit.
 
-#### Understanding the Staging area
+#### Understanding the Staging Area
 
 When you type the following in the command prompt/terminal:
 
@@ -207,6 +207,8 @@ git commit -m "{MESSAGE}"
 ```
 
 Use the above command to commit the changes with a message which vaguely describes your changes.
+
+#### Push
 
 Now, type the following to finally push your changes to your remote
 branch
