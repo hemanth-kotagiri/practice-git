@@ -11,6 +11,12 @@ Here's Everything that you're going to learn in this tutorial:
 
 That was a mouthful, follow the steps below to practice!
 
+If you are faced with any issues in moving forward with this tutorial, please raise an issue.
+
+- Click on the Issues tab of this repository.
+- Add a title and a description of your issue.
+- Create the issue and I will get back as soon as possible.
+
 But first, what in the world is Git?
 
 - It is a version control software that is used to track changes as you make modifications to your file(s).
